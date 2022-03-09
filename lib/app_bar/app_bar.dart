@@ -64,14 +64,14 @@ class Apbr extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [ 
         
-              CircleAvatar(
+              CircleAvatar( 
                 backgroundImage: const AssetImage('assets/logo.jpg'),
               radius: rad
               ),
         
               Text(
                 'AKAZA GAMING',
-                style: GoogleFonts.italianno(
+                style: GoogleFonts.cinzelDecorative(
                   fontSize: ftsize,
                   fontWeight: FontWeight.bold,
                   letterSpacing: space,
