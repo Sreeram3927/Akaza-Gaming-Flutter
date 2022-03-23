@@ -20,47 +20,17 @@ class Web extends StatelessWidget {
       child: Stack(
         children: [
     
-          Opacity(
-            opacity: 0.7,
-            child: FadeInImage.memoryNetwork(
-              image: 'https://wallpapercave.com/w/wp7956775',
-              placeholder: ,
-              fadeInDuration: const Duration(milliseconds: 750),
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
-              fit: BoxFit.cover,
-            ),
+          Image.asset(
+            'assets/Bg 1.jpg',
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            fit: BoxFit.cover
           ),
           
-          // const Scrollbar(
-          
-          //   child: SingleChildScrollView(
-          //     child: Homeview()
-          //   ),
-        
-          //   isAlwaysShown: true,
-          //   showTrackOnHover: true,
-        
-          //   scrollbarOrientation: ScrollbarOrientation.right,
-          // )
+          const Homeview()
         ]
       ),
     );
 
   }
-}
-
-Widget bgimg(child) {
-
-  Widget child;
-  
-
-  return Stack(
-    children: [
-
-      const Center(child: CircularProgressIndicator()),
-      child
-
-    ],
-  );
 }

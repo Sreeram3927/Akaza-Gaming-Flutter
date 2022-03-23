@@ -9,60 +9,61 @@ class Desktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  CenteredView(
-      height: 60.0,
-      width: 80.0,
-      child:Column(
-        children: [
+    return  Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
   
-          const Apbr(),
+        Text(
+          'AKAZA GAMING',
+          style: GoogleFonts.cinzelDecorative(
+            fontSize: 50.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 20.0,
+            color: Colors.white70,
+            decoration: TextDecoration.none,
+            
+          )
+        ),
   
-          const SizedBox(height: 20),
+        loGo(),
+
+       const Calltoaction()
+      ]
+    );
       
-          Text(
-            'MY LOGO(S)',
+
+  }
+}
+
+Widget loGo() {
+  return Column(
+    children: [
+
+      Text(
+            'MY LOGO',
             style: GoogleFonts.architectsDaughter(
-              fontSize: 20.0,
+              fontSize: 30.0,
               fontWeight: FontWeight.bold,
               letterSpacing: 5.0,
-              color: Colors.black,
+              color: Colors.white60,
               decoration: TextDecoration.none
             )
           ),
       
           const SizedBox(height: 20,),
       
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              
-              Image.asset(
-                'assets/logo.jpg',
-                height: 250.0,
-                width: 250.0,
-                fit: BoxFit.fill,
-              ),
-              
-              
-      
-              Image.asset(
-                'assets/logo 2.jpg',
-                height: 250.0,
-                width: 450.0,
-                fit: BoxFit.fill
-              )
-                  
-            ]
+          const CircleAvatar(
+            radius: 84.0,
+            backgroundColor: Colors.white,
+            child: CircleAvatar(
+          
+              backgroundImage: AssetImage('assets/logo.jpg'),
+              radius: 80.0,
+          
+            ),
           ),
 
-          const SizedBox(height: 35,),
-
-          const Calltoaction()
-        ]
-      ),
-    );
-      
-
-  }
+    ],
+  );
 }
 

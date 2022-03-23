@@ -56,7 +56,7 @@ class Apbr extends StatelessWidget {
           height: contheight,
         
           decoration: BoxDecoration(
-            color: Colors.black45,
+            color: Colors.black26,
             borderRadius: BorderRadius.circular(5.0)
           ),
         
@@ -64,35 +64,19 @@ class Apbr extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [ 
         
-              CircleAvatar( 
-                backgroundImage: const AssetImage('assets/logo.jpg'),
-              radius: rad
-              ),
-        
               Text(
                 'AKAZA GAMING',
                 style: GoogleFonts.cinzelDecorative(
                   fontSize: ftsize,
                   fontWeight: FontWeight.bold,
                   letterSpacing: space,
-                  color: Colors.black,
-                  decoration: TextDecoration.none
+                  color: Colors.white70,
+                  decoration: TextDecoration.none,
+                  
                 )
               ),
         
-            TextButton( 
-              child: Image.asset(
-                'assets/Discord2.png',
-                height: height,
-                width: width
-                ),
-      
-                onPressed: () async {
-                  const String url = 'https://discord.gg/YVYrrHRmZE';
-                  await launch(url);
-                }
-        
-              )
+            
         
             ]
           ),
