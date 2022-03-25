@@ -27,7 +27,11 @@ class Web extends StatelessWidget {
             fit: BoxFit.cover
           ),
           
-          const Homeview()
+          const Scrollbar(
+            child: SingleChildScrollView(child: Homeview()),
+            showTrackOnHover: true,
+            isAlwaysShown: true,
+          )
         ]
       ),
     );
