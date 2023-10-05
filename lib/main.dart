@@ -29,8 +29,8 @@ class Web extends StatelessWidget {
           
           const Scrollbar(
             child: SingleChildScrollView(child: Homeview()),
-            showTrackOnHover: true,
-            isAlwaysShown: true,
+            trackVisibility: true,
+            thumbVisibility: true,
           )
         ]
       ),
