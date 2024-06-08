@@ -33,7 +33,7 @@ class UiWeb extends StatelessWidget {
     return  Column(
       children: [
   
-        Container(
+        SizedBox(
           height: height,
           child: Center(
             child: Text(

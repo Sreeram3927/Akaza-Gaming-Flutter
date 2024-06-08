@@ -35,8 +35,8 @@ class MediaIcons extends StatelessWidget {
                  width: size,
                 ),
                onPressed: () async {
-                 const String url = 'https://discord.gg/YVYrrHRmZE';
-                 launch(url);
+                 final Uri url = Uri(path: 'https://discord.gg/YVYrrHRmZE');
+                 launchUrl(url);
                },
             ),
 
@@ -48,8 +48,8 @@ class MediaIcons extends StatelessWidget {
                  width: size,
                 ),
                onPressed: () async {
-                 const String url = 'https://www.instagram.com/____akaza____/';
-                 launch(url);
+                 final Uri url = Uri(path: 'https://www.instagram.com/____akaza____/');
+                 launchUrl(url);
                },
             ),
 
@@ -61,8 +61,8 @@ class MediaIcons extends StatelessWidget {
                  width: size,
                 ),
                onPressed: () async {
-                 const String url = 'https://www.youtube.com/channel/UCdhCNdxPjm3o2nIkyU2du_g';
-                 launch(url);
+                 final Uri url = Uri(path: 'https://www.youtube.com/channel/UCdhCNdxPjm3o2nIkyU2du_g');
+                 launchUrl(url);
                },
             ),
 
@@ -74,8 +74,8 @@ class MediaIcons extends StatelessWidget {
                  width: size,
                 ),
                onPressed: () async {
-                 const String url = 'https://akaza-gaming.web.app/';
-                 launch(url);
+                 final Uri url = Uri(path: 'https://akaza-gaming.web.app/');
+                 launchUrl(url);
                },
             ),
 
